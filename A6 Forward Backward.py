@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[12]:
-
-
 import numpy as np
 
 def sigmoid(x):
@@ -33,9 +27,12 @@ class ANN:
     
     def backward(self, X, y, output):
         output_error = y - output
+        #Figure out how much each output contributed to mistake
         output_delta = output_error * sigmoid_derivative(output)
         
+        #Find out how much error by hidden layers
         hidden_error = output_delta.dot(self.W2.T)
+        #Figure out how much to adjust hidden layer
         hidden_delta = hidden_error * sigmoid_derivative(self.a1)
         
         self.W2 += self.a1.T.dot(output_delta) * self.lr
@@ -80,9 +77,6 @@ def main():
 if __name__ == '__main__':
     main()
   
-
-
-# In[ ]:
 
 
 
