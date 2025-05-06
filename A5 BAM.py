@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import numpy as np
@@ -31,7 +28,7 @@ print(W)
 
 
 
-# This function turns positive numbers into 1, and negative into -1
+# This sign activation function turns positive numbers into 1, and negative into -1
 def activate(vector):
     return np.where(vector >= 0, 1, -1)
 
@@ -67,7 +64,6 @@ print("Recalled Output (Y):", y2)
 print("Recalled Input (X):", x2)
 
 
-# In[ ]:
 
 
 
