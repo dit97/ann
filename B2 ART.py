@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 import numpy as np
@@ -62,8 +58,16 @@ if __name__ == "__main__":
     trained_categories = train_art1(input_data, vigilance=0.8)
 
 
-# In[ ]:
+# Adaptive Resonance Theory  by Stephen Grossberg and Gail Carpenter for unsupervised learning of binary input patterns (0s and 1s).
 
+# Input pattern → F1
+# Compute similarity with F2 nodes
+# Choose best-matching F2 node
+# Compare match with vigilance (ρ)
+# If matched:
+# Update weights (Hebbian)
+# If not:
+# Reset → try another node or create new category
 
 
 
