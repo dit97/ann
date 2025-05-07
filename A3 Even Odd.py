@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 import numpy as np
@@ -36,9 +32,9 @@ for i in range(10):
     prediction = perceptron.predict(binary_input)
     print(f"Input: {i} - Predicted: {'Even' if prediction == 1 else 'Odd'}")
 
+#Perceptron Model (by Frank Rosenblatt, 1958) Learning through error correction W=w+n*e*x b=b+n*e
+#Error correction occurs after each prediction (step activation function)
 
-# In[ ]:
-
-
+#ADALINE Model (Adaptive Linear Neuron) Linear activation function error correction occures before activation function
 
 
