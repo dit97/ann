@@ -63,7 +63,9 @@ print("\nTest Input 2:", test_input2)
 print("Recalled Output (Y):", y2)
 print("Recalled Input (X):", x2)
 
-
+#BAM (Bidirectional Associative Memory) is a hetero-associative, 
+#two-layer recurrent neural network proposed by Bart Kosko in 1988.
+# Uses Hebb learning rule: neuron fire together strethens
 
 
 
