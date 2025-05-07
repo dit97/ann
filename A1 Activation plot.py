@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import numpy as np
@@ -56,8 +53,12 @@ plt.tight_layout()
 plt.show()
 
 
-# In[ ]:
-
+#tan= e(X)-e(-x)/e(X)+e(-x)  [-1.1]
+# np.linspace(-6, 6, 50) generates 50 equally spaced numbers from -6 to 6.
+# Each plt.subplot(2, 2, n) divides the plot into a 2x2 grid and selects the nth subplot.
+# plt.plot(...) plots the x and y values for each function.
+# plt.title(...) sets the title.
+# plt.legend() shows the label on the plot.
 
 
 
