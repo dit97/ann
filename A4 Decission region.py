@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 import numpy as np
@@ -49,10 +45,10 @@ perceptron.fit(X, y)
 def plot_decision_regions(X, y, model):
     x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
     y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
-
+#converts eg 1-9 to 0-10
     xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.01),
                          np.arange(y_min, y_max, 0.01))
-
+#Flattern Grid into into list
     grid_points = np.c_[xx.ravel(), yy.ravel()]
     Z = model.predict(grid_points)
     Z = Z.reshape(xx.shape)
@@ -67,7 +63,13 @@ def plot_decision_regions(X, y, model):
 plot_decision_regions(X, y, perceptron)
 
 
-# In[ ]:
+#Perceptron Model (by Frank Rosenblatt, 1958) Learning through error correction W=w+n*e*x b=b+n*e
+#Error correction occurs after each prediction (step activation function)
+
+#ADALINE Model (Adaptive Linear Neuron) Linear activation function error correction occures before activation function
+
+#A decision region is the area (region) of the input space where the model predicts the same output class. decission boundary seperates decission region
+
 
 
 
