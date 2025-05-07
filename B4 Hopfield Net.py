@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[13]:
 
 
 import numpy as np
@@ -47,7 +43,8 @@ print("Input Pattern: ", test_pattern)
 print("Recalled Pattern:", output)
 
 
-# In[ ]:
+# A Hopfield Network is a type of recurrent neural network invented by John Hopfield in 1982. It is designed for associative memory
+# used for auto assosiative memory
 
 
 
