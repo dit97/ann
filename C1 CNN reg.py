@@ -17,6 +17,7 @@
 import tensorflow as tf
 import numpy as np
 import pandas as pd
+#transforms features to have zero mean and unit variance
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report
@@ -65,7 +66,6 @@ y_pred = (y_pred_proba > 0.5).astype("int32")
 print(classification_report(y_test, y_pred))
 
 
-# In[ ]:
 
 
 
