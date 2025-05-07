@@ -28,7 +28,7 @@ model = models.Sequential([
     layers.Conv2D(64, (3, 3), activation='relu'),
     layers.Flatten(),
     layers.Dense(64, activation='relu'), # Added a dense layer for better feature learning
-    layers.Dense(10, activation='softmax')
+    layers.Dense(10, activation='softmax') # 10 categories softmax converts numbers to probabilities greater no greater probability
 ])
 
 # Compile the model
@@ -45,7 +45,7 @@ print(f"Test Accuracy: {test_acc:.4f}")
 
 # Make a prediction on the first test image
 prediction = model.predict(x_test[:1])
-predicted_label = np.argmax(prediction[0])
+predicted_label = np.argmax(prediction[0]) #output possiblilities of images is stored in array choose greates ones index as label
 print(f"Predicted Label: {predicted_label}")
 print(f"Actual Label: {y_test[0]}")
 
@@ -56,7 +56,7 @@ plt.axis("off")
 plt.show()
 
 
-# In[3]:
+
 
 
 prediction = model.predict(x_test[9:10])
@@ -72,7 +72,7 @@ plt.show()
 
 
 
-
+#Input Image → Convolution → ReLU → Pooling → (Repeat) → Flatten → Fully Connected → Output
 
 
 
