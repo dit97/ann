@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import numpy as np
@@ -34,7 +31,7 @@ model = models.Sequential([
     layers.Flatten(),
     layers.Dense(64, activation='relu'),
     layers.Dropout(0.5),  # Adding Dropout for regularization
-    layers.Dense(10, activation='softmax')  # 10 categories for Fashion MNIST
+    layers.Dense(10, activation='softmax')  # 10 categories softmax converts numbers to probabilities greater no greater probability
 ])
 
 # Compile the model
@@ -51,7 +48,7 @@ print(f"Test Accuracy: {test_acc:.4f}")
 
 # Make a prediction on the first test image
 prediction = model.predict(x_test[:1])
-predicted_label = np.argmax(prediction[0])
+predicted_label = np.argmax(prediction[0])  #output possiblilities of images is stored in array choose greates ones index as label
 print(f"Predicted Label: {predicted_label}")
 print(f"Actual Label: {y_test[0]}")
 
@@ -61,8 +58,8 @@ plt.title(f"Predicted: {predicted_label}, Actual: {y_test[0]}")
 plt.axis("off")
 plt.show()
 
+#Input Image → Convolution → ReLU → Pooling → (Repeat) → Flatten → Fully Connected → Output
 
-# In[ ]:
 
 
 
