@@ -25,6 +25,7 @@ print(f"Testing data shape: {x_test.shape}")
 
 # Build CNN model
 model = models.Sequential([
+    #32 number of filter and 3,3 is dimention of filter
     layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
     layers.MaxPooling2D((2, 2)),
     layers.Conv2D(64, (3, 3), activation='relu'),
