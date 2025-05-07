@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 def activate(inputs, weights, threshold):
@@ -26,7 +23,12 @@ def test_ANDNOT():
 test_ANDNOT()
 
 
-# In[ ]:
+# Feature	Description  McCulloch-Pitts model, proposed in 1943 by Warren McCulloch and Walter Pitts
+# Inputs	Binary (0 or 1)
+# Weights	Fixed, often all 1s ->Summation 
+# Threshold	Manually set
+# Output	Binary (0 or 1)
+# Activation	Step function
 
 
 
